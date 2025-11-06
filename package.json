@@ -1,0 +1,26 @@
+{
+  "name": "vscode-sample-extension-2",
+  "displayName": "VSCode Sample Extension 2",
+  "description": "Another simple VS Code extension that shows a custom greeting message.",
+  "version": "1.0.0",
+  "publisher": "yourusername",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:sampleExtension2.greetUser"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "sampleExtension2.greetUser",
+        "title": "Greet User from Extension 2"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": ["vscode", "extension", "greeting"]
+}
